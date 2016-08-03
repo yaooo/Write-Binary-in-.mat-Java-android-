@@ -132,7 +132,7 @@ public class writeFileInBinary{
                 }
             }
             try {
-            	ByteBuffer buffer = ByteBuffer.allocate(8);  
+            	ByteBuffer buffer = ByteBuffer.allocate(2);  
                 buffer.order(ByteOrder.LITTLE_ENDIAN);
                 buffer.putShort(data);
                 out.write(buffer.array());  
